@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    rebase-strategy: "auto"
+    reviewers:
+      - "gsmarcil"  # غيّرها لاسمك أو فريقك
+    labels:
+      - "dependencies"
+      - "nextjs"
+    commit-message:
+      prefix: "chore(deps)"
